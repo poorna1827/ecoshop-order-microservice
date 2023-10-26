@@ -1,0 +1,12 @@
+namespace: dev
+
+replicaCount: 1
+appName: order
+containerName: order
+
+serviceName: order-service
+serviceType: ClusterIP
+
+image:
+  name: azuresolutionregistry.azurecr.io/ordermicroservice
+  tag: {{tag}}
